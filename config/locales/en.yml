@@ -297,7 +297,7 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features
+    title: Fitur
     rooms: Personalized Rooms
     recordings: Recording Management
     designs: Custom Designs
@@ -305,13 +305,13 @@ en:
   footer:
     legal: Terms
     privpolicy: Privacy Policy
-    powered_by: Powered by %{href}.
+    powered_by: USCAMz Powered by %{href}.
   forgot_password:
     subtitle: Forgot Password
     email: Email
     submit: Submit
   go_back: Go back
-  greenlight: Greenlight
+  greenlight: USCAMz
   header:
     all_recordings: All Recordings
     dropdown:

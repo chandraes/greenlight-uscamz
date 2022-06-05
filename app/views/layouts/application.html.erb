@@ -48,6 +48,9 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <%= stylesheet_link_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css' %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
     <%= favicon_link_tag asset_path('favicon.ico') %>
 
     <!-- Primary color styling -->
@@ -87,7 +90,26 @@
 
       <%= yield %>
     </div>
+    <script>
 
+      var glideHeroPeek = new Glide('.heropeek', {
+        type: 'carousel',
+        animationDuration: 1000,
+        autoplay: 2000,
+        focusAt: '1',
+        startAt: 1,
+        perView: 1,
+        // set a value to show the previous and next slides peeking in
+        peek: {
+          before: 20,
+          after: 20
+        },
+        gap: 0
+      });
+
+      glideHeroPeek.mount();
+
+    </script>
     <%= render "shared/footer" %>
   </body>
 </html>
